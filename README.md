@@ -1,36 +1,167 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Evolution Media Group
 
-## Getting Started
+A modern, dark-themed portfolio website showcasing web development work with an "autonomous design, human craft" philosophy.
 
-First, run the development server:
+## 🚀 Live Demo
+
+[Coming Soon - Vercel Deployment]
+
+## ✨ Features
+
+- **Modern Dark Theme** - Sophisticated dark background (#0f0f0f) with cyan/teal accents (#00bcd4)
+- **Beautiful Typography** - Playfair Display (serif headings) + Inter (sans body) fonts
+- **Smooth Animations** - Scroll-triggered animations using Framer Motion
+- **Responsive Design** - Mobile-first approach, looks great on all devices
+- **Project Portfolio** - Showcase of completed projects with cards
+- **Services Section** - Clear presentation of offerings
+- **Contact Form** - Modern dark-themed contact form
+
+## 🎨 Sections
+
+1. **Hero** - Eye-catching introduction with tagline "Autonomous design, human craft."
+2. **About** - Visionary narrative about the future of autonomous web design
+3. **Portfolio** - Featured projects (Travel Bug, Rei Bridal, Sensory Play Zone)
+4. **Services** - Custom Website Development, Brand Identity, Deployment, Support
+5. **Contact** - Simple form for inquiries
+6. **Footer** - Social links and copyright
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Styling:** Tailwind CSS v4
+- **Animation:** Framer Motion
+- **Icons:** Lucide React
+- **Typography:** Google Fonts (Playfair Display, Inter)
+- **Deployment:** Vercel
+
+## 📦 Installation
 
 ```bash
+# Clone the repository
+git clone <repository-url>
+cd evolution-media-group
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗 Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📤 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project includes `vercel.json` for quick deployment:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Install Vercel CLI
+npm i -g vercel
 
-## Deploy on Vercel
+# Deploy
+vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Or connect your GitHub repository to Vercel for automatic deployments.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎯 Theme Colors
+
+- **Primary Background:** `#0f0f0f`
+- **Secondary Background:** `#1a1a1a`
+- **Accent/Cyan:** `#00bcd4`
+- **Text Primary:** `#ffffff`
+- **Text Secondary:** `#9ca3af`
+
+## 📝 Project Structure
+
+```
+evolution-media-group/
+├── app/
+│   ├── layout.tsx        # Root layout with fonts
+│   ├── page.tsx          # Main page with all sections
+│   └── globals.css       # Global styles and CSS variables
+├── public/               # Static assets
+├── vercel.json          # Deployment configuration
+└── README.md            # This file
+```
+
+## 🎨 Animation Effects
+
+- **Fade In Up** - Elements fade in with upward motion
+- **Glow Hover** - Cards glow on hover with cyan accent
+- **Card Lift** - Project cards lift smoothly on hover
+- **Smooth Scroll** - Native smooth scrolling for anchors
+
+## 🔧 Customization
+
+### Update Projects
+
+Edit `projectData` array in `app/page.tsx`:
+
+```typescript
+const projectData = [
+  {
+    title: "Your Project",
+    tagline: "Your Subtitle",
+    url: "https://your-project.com",
+    description: "Project description...",
+    tech: ["Next.js", "Tailwind"],
+    gradient: "from-cyan-400 to-emerald-400"
+  }
+];
+```
+
+### Update Services
+
+Edit `services` array in `app/page.tsx`:
+
+```typescript
+const services = [
+  {
+    icon: YourIcon,
+    title: "Your Service",
+    description: "Service description..."
+  }
+];
+```
+
+### Change Colors
+
+Update `app/globals.css` CSS variables:
+
+```css
+:root {
+  --background: #0f0f0f;
+  --accent: #00bcd4;
+}
+```
+
+## 📱 Responsive Breakpoints
+
+- **Mobile:** < 640px (single column)
+- **Tablet:** 640px - 1024px (2 columns)
+- **Desktop:** > 1024px (3 columns)
+
+## 🚀 Performance
+
+- Next.js 16 with App Router for optimal performance
+- Tailwind CSS v4 for minimal CSS bundle
+- Optimized animations with Framer Motion
+- Native lazy loading for images (when added)
+
+## 📄 License
+
+Copyright © 2026 Evolution Media Group. All rights reserved.
+
+---
+
+**Built with autonomous design, human craft.**
