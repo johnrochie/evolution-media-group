@@ -51,7 +51,7 @@ export default function WebsiteOrderForm() {
       
       if (data.success || data.projectId) {
         setOrderId(data.orderId || data.projectId || 'EVO-' + Date.now());
-        setStep(4); // Success step
+        setStep(4);
       } else {
         alert('Order received! Our AI will start building your website.');
         setOrderId('EVO-' + Date.now());
@@ -59,7 +59,6 @@ export default function WebsiteOrderForm() {
       }
     } catch (error) {
       console.error('Order submission error:', error);
-      // Fallback - still show success for demo
       setOrderId('EVO-DEMO-' + Date.now());
       setStep(4);
     } finally {
