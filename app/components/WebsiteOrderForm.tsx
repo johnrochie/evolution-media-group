@@ -32,8 +32,8 @@ export default function WebsiteOrderForm() {
     setIsSubmitting(true);
     
     try {
-      // Use environment variable or fallback for API URL
-      const API_BASE_URL = process.env.NEXT_PUBLIC_EVO_API_URL || 'http://localhost:6002';
+      // Use local API route (deployed with the site)
+      const API_BASE_URL = '/api';
       
       // Call Evolution Media Website Generator API
       const response = await fetch(`${API_BASE_URL}/generate`, {
