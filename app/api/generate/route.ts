@@ -48,15 +48,3 @@ export async function GET() {
     version: '1.0.0'
   });
 }
-
-// TODO: In production, connect to local queue system
-// For now, log to console (Vercel logs) and return success
-console.log('📦 WEBSITE ORDER:', {
-  orderId,
-  businessName,
-  industry,
-  email,
-  timestamp: new Date().toISOString(),
-  status: 'received',
-  action: 'Manual processing required - connect to local queue'
-});
